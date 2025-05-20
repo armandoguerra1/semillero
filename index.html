@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector Digital</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</head>
+<body>
+  <header class="navbar sticky">
+    <div class="container">
+      <h1 class="logo">Vector Digital</h1>
+      <nav class="nav" id="navMenu">
+        <a href="#hero">Inicio</a>
+        <a href="#features">Servicios</a>
+        <a href="#testimonials">Testimonios</a>
+        <a href="#contact">Contacto</a>
+        <button id="darkModeToggle">🌙</button>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+
+  <header class="hero" id="hero">
+    <div class="container">
+      <h1>Creemos Experiencias Digitales Que Conectan y Convierten</h1>
+      <p>Diseño, conexión, lógica y flujo con propósito. Tiendas E-commerce escalables, Automatización de procesos, diseño y desarrollo de soluciones innovadoras con interfaces funcionales y atractivas.</p>
+      <button>Descubre nuestras soluciones</button>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="feature">
+        <h2>Landing Pages Optimizadas</h2>
+        <p>Diseñamos y desarrollamos páginas con altos estándares de rendimiento que capturan clientes potenciales con llamadas a la acción claras y resultados medibles.</p>
+        <button>Conocer más</button>
+      </div>
+      <div class="feature">
+        <h2>Tu Tienda Online: Potente, Escalable y Fácil de Gestionar</h2>
+        <p>Soluciones de comercio a medida. Desde catálogo hasta el producto final, integración logística, facturación y experiencia de usuario.</p>
+        <button>Probar ahora</button>
+      </div>
+      <div class="feature">
+        <h2>Automatiza Tareas, Optimiza Recursos</h2>
+        <p>Automatizamos tus procesos de negocio con software a medida para incrementar tu eficiencia y reducir errores.</p>
+        <button>Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="counter">
+    <div class="container">
+      <h2>+<span id="projectCounter">0</span> proyectos entregados</h2>
+    </div>
+  </section>
+
+  <section class="immersive">
+    <div class="container">
+      <h2>Experiencias Inmersivas que Marcan la Diferencia</h2>
+      <p>Impulsa la innovación con tecnologías de última generación. Desarrollamos aplicaciones de Realidad Aumentada (AR) y Virtual (VR) para la visualización de productos, tours virtuales, capacitaciones interactivas y más.</p>
+      <button>Ver más</button>
+    </div>
+  </section>
+
+  <section class="results">
+    <div class="container">
+      <h2>Resultados Tangibles para Tu Negocio</h2>
+      <p>Nos enfocamos en entregar soluciones que se alineen con los KPI, con datos e impactos medibles.</p>
+      <button>Probar ahora</button>
+    </div>
+  </section>
+
+  <section class="tech">
+    <div class="container">
+      <h2>Tecnología de Vanguardia a Tu Servicio</h2>
+      <p>Utilizamos las últimas tendencias y tecnologías ágiles para lograr que tu proyecto sea exitoso, adaptable y alineado con tu flujo digital.</p>
+      <button>Leer más</button>
+    </div>
+  </section>
+
+  <section class="trusted">
+    <div class="container">
+      <h2>Confían en Nosotros</h2>
+      <div class="brands">
+        <span>Apple</span>
+        <span>Microsoft</span>
+        <span>Slack</span>
+        <span>Google</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="integration">
+    <div class="container">
+      <h2>Integración Perfecta con Tus Herramientas</h2>
+      <p>Nos adaptamos a tus necesidades integrándonos con tus plataformas con APIs e integraciones flexibles.</p>
+      <button>Leer más</button>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Lo Que Dicen Nuestros Clientes</h2>
+      <div class="slider">
+        <div class="testimonial active">
+          <p>El resultado de nuestro sitio web y tienda online superó nuestras expectativas. El equipo fue profesional y muy atento.</p>
+          <h4>Obeorn Shaw, MCH</h4>
+        </div>
+        <div class="testimonial">
+          <p>Implementaron la solución exacta que necesitábamos. ¡Excelente experiencia!</p>
+          <h4>Obeorn Shaw, MCH</h4>
+        </div>
+        <div class="testimonial">
+          <p>La experiencia con Vector Digital fue increíble. Nuestro proyecto fue entregado a tiempo y con excelente calidad.</p>
+          <h4>Obeorn Shaw, MCH</h4>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button onclick="changeSlide(-1)">&#10094;</button>
+        <button onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="cta">
+    <div class="container">
+      <h2>¿Listo para Empezar Tu Próximo Proyecto Digital?</h2>
+      <p>Contáctanos hoy mismo para una evaluación sin compromiso.</p>
+      <button>Contáctanos ahora</button>
+    </div>
+  </footer>
+
+  <div class="chat-widget">
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/6807cf2b1339131907ec3bdf/1ipf82gm8';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
